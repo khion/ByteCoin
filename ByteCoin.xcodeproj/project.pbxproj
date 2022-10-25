@@ -10,9 +10,12 @@
 		79D1FA632907744700758B12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1FA622907744700758B12 /* AppDelegate.swift */; };
 		79D1FA652907744700758B12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1FA642907744700758B12 /* SceneDelegate.swift */; };
 		79D1FA672907744700758B12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1FA662907744700758B12 /* ViewController.swift */; };
-		79D1FA6A2907744700758B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D1FA682907744700758B12 /* Main.storyboard */; };
 		79D1FA6C2907744900758B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D1FA6B2907744900758B12 /* Assets.xcassets */; };
 		79D1FA6F2907744900758B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D1FA6D2907744900758B12 /* LaunchScreen.storyboard */; };
+		79D1FA7B2907752B00758B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D1FA792907752B00758B12 /* Main.storyboard */; };
+		79D1FA7F290775DE00758B12 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1FA7E290775DE00758B12 /* CoinManager.swift */; };
+		79D1FA812907872800758B12 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1FA802907872800758B12 /* CoinModel.swift */; };
+		79D1FA832907883D00758B12 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1FA822907883D00758B12 /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		79D1FA622907744700758B12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D1FA642907744700758B12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		79D1FA662907744700758B12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79D1FA692907744700758B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79D1FA6B2907744900758B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79D1FA6E2907744900758B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79D1FA702907744900758B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79D1FA7A2907752B00758B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../ByteCoin-iOS13/ByteCoin/View/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		79D1FA7E290775DE00758B12 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		79D1FA802907872800758B12 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		79D1FA822907883D00758B12 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		79D1FA612907744700758B12 /* ByteCoin */ = {
 			isa = PBXGroup;
 			children = (
+				79D1FA78290774DC00758B12 /* Model */,
+				79D1FA77290774D300758B12 /* Controller */,
+				79D1FA76290774C500758B12 /* View */,
 				79D1FA622907744700758B12 /* AppDelegate.swift */,
 				79D1FA642907744700758B12 /* SceneDelegate.swift */,
-				79D1FA662907744700758B12 /* ViewController.swift */,
-				79D1FA682907744700758B12 /* Main.storyboard */,
 				79D1FA6B2907744900758B12 /* Assets.xcassets */,
 				79D1FA6D2907744900758B12 /* LaunchScreen.storyboard */,
 				79D1FA702907744900758B12 /* Info.plist */,
 			);
 			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		79D1FA76290774C500758B12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79D1FA792907752B00758B12 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79D1FA77290774D300758B12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79D1FA662907744700758B12 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79D1FA78290774DC00758B12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79D1FA7E290775DE00758B12 /* CoinManager.swift */,
+				79D1FA802907872800758B12 /* CoinModel.swift */,
+				79D1FA822907883D00758B12 /* CoinData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D1FA7B2907752B00758B12 /* Main.storyboard in Resources */,
 				79D1FA6F2907744900758B12 /* LaunchScreen.storyboard in Resources */,
 				79D1FA6C2907744900758B12 /* Assets.xcassets in Resources */,
-				79D1FA6A2907744700758B12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D1FA832907883D00758B12 /* CoinData.swift in Sources */,
+				79D1FA812907872800758B12 /* CoinModel.swift in Sources */,
+				79D1FA7F290775DE00758B12 /* CoinManager.swift in Sources */,
 				79D1FA672907744700758B12 /* ViewController.swift in Sources */,
 				79D1FA632907744700758B12 /* AppDelegate.swift in Sources */,
 				79D1FA652907744700758B12 /* SceneDelegate.swift in Sources */,
@@ -147,20 +183,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79D1FA682907744700758B12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79D1FA692907744700758B12 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79D1FA6D2907744900758B12 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				79D1FA6E2907744900758B12 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79D1FA792907752B00758B12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D1FA7A2907752B00758B12 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
